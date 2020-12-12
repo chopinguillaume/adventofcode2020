@@ -1,6 +1,7 @@
 package fr.gchopin.advent2020;
 
 import java.io.InputStream;
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -43,6 +44,27 @@ public class Input {
             while (scanner.hasNextLine()) {
                 String nextLine = scanner.nextLine();
                 liste.add(Integer.parseInt(nextLine));
+            }
+
+            scanner.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return liste;
+    }
+
+    public List<BigInteger> getBigIntegers() {
+        List<BigInteger> liste = new ArrayList<>();
+
+        try (InputStream resourceAsStream = getClass().getResourceAsStream(inputFile)) {
+            if (resourceAsStream == null) {
+                throw new IllegalArgumentException("Input file not found : " + inputFile);
+            }
+            Scanner scanner = new Scanner(resourceAsStream);
+            while (scanner.hasNextLine()) {
+                String nextLine = scanner.nextLine();
+                liste.add(new BigInteger(nextLine));
             }
 
             scanner.close();
