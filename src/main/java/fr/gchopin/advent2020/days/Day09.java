@@ -1,7 +1,6 @@
 package fr.gchopin.advent2020.days;
 
 import java.math.BigInteger;
-import java.util.Collections;
 import java.util.List;
 
 import fr.gchopin.advent2020.Day;
