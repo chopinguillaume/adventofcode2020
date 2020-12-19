@@ -29,4 +29,8 @@ public abstract class Day {
         long runtimePart2 = Duration.between(start2, end2).toMillis();
         System.out.println(String.format("Part 2 took %d ms", runtimePart2));
     }
+
+    protected enum PartNumber {
+        Part1, Part2;
+    }
 }
