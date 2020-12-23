@@ -1,8 +1,5 @@
 package fr.gchopin.advent2020.days;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import fr.gchopin.advent2020.Day;
 
 public class Day15 extends Day {
