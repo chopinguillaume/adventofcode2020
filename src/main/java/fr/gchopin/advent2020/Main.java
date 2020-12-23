@@ -24,7 +24,15 @@ class Main {
         // (new Day13("input-13-test2.txt")).run();
         // (new Day13("input-13.txt")).run();
         // (new Day14("input-14-test.txt")).run();
-        (new Day14("input-14-test2.txt")).run();
-        (new Day14("input-14.txt")).run();
+        // (new Day14("input-14-test2.txt")).run();
+        // (new Day14("input-14.txt")).run();
+        (new Day15(0, 3, 6)).run();
+        (new Day15(1, 3, 2)).run();
+        (new Day15(2, 1, 3)).run();
+        (new Day15(1, 2, 3)).run();
+        (new Day15(2, 3, 1)).run();
+        (new Day15(3, 2, 1)).run();
+        (new Day15(3, 1, 2)).run();
+        (new Day15(2, 1, 10, 11, 0, 6)).run();
     }
 }

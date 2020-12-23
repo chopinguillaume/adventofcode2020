@@ -10,6 +10,10 @@ public abstract class Day {
         _input = new Input(inputFile);
     }
 
+    public Day() {
+        _input = null;
+    }
+
     public abstract void part1();
 
     public abstract void part2();
